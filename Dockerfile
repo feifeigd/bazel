@@ -2,7 +2,7 @@
 FROM ubuntu:18.04
 
 ENV DEBIAN_FRONTEND noninteractive
-RUN apt update && apt install -y expect g++ git openjdk-11-jdk unzip vim wget zip 
+RUN apt update && apt install -y expect g++ git openjdk-8-jdk unzip vim wget zip 
 
 
 # bazel
@@ -28,7 +28,7 @@ RUN cd /opt && wget --quiet --output-document=android-sdk.tgz http://dl.google.c
 
 # Setup environment
 ENV ANDROID_HOME /opt/android-sdk-linux
-ENV PATH ${PATH}:${ANDROID_HOME}/tools:${ANDROID_HOME}/platform-tools
+ENV PATH ${PATH}:${ANDROID_HOME}/tools:$ANDROID_HOME/tools/bin:${ANDROID_HOME}/platform-tools
 
 RUN which adb
 RUN which android

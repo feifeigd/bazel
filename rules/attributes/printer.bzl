@@ -14,7 +14,7 @@ def _impl(ctx):
 
     # For debugging, consider using `dir` to explore the existing filelds.
     # print(dir(ctx)) # prints all the fields and methods of ctx
-    print(dir(ctx.attr)) # prints all the attributes of the rule
+    # print(dir(ctx.attr)) # prints all the attributes of the rule
 
 
 printer = rule(
