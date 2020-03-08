@@ -1,7 +1,7 @@
-# ubuntu 16.04
-FROM ubuntu
+# ubuntu 18.04
+FROM ubuntu:18.04
 
-RUN apt update && apt install -y g++ git openjdk-8-jdk unzip vim wget zip 
+RUN apt update && apt install -y g++ git openjdk-11-jdk unzip vim wget zip 
 
 WORKDIR /root/work
 

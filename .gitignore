@@ -1,5 +1,8 @@
 # bazel
-bazel-*/
+bazel-bin
+bazel-out
+bazel-testlogs
+bazel-work
 
 # Prerequisites
 *.d
