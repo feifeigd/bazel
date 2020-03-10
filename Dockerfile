@@ -2,7 +2,7 @@
 FROM ubuntu:18.04
 
 ENV DEBIAN_FRONTEND noninteractive
-RUN apt update && apt install -y expect g++ git openjdk-8-jdk unzip vim wget zip 
+RUN apt update && apt install -y expect g++ git openjdk-8-jdk python3 unzip vim wget zip 
 
 
 # bazel
